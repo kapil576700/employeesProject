@@ -18,6 +18,7 @@ import static org.mockito.Mockito.*;
 @SpringBootTest
 public class EmployeeServiceTest {
 
+    @Autowired
     private Employee employee;
 
     @MockBean
@@ -28,7 +29,7 @@ public class EmployeeServiceTest {
 
     @BeforeEach
     public void beforeEach(){
-        employee = new Employee();
+//        employee = new Employee();
         employee.setFirstName("Kapil");
         employee.setLastName("Singh");
         employee.setEmail("kap@xyz.com");
